@@ -1,0 +1,42 @@
+# Listas para guardar datos
+nombres = []
+telefonos = []
+
+while True:
+    print("--- MENÚ ---")
+    print("1. Añadir contacto")
+    print("2. Mostrar todos los contactos")
+    print("3. Buscar contacto por nombre")
+    print("4. Salir")
+
+    opcion = input("Elija una opción: ")
+
+    if opcion == "1":
+        nombre = input("Ingrese el nombre: ")
+        telefono = input("Ingrese el número de teléfono: ")
+        nombres.append(nombre)
+        telefonos.append(telefono)
+        print("Contacto añadido.")
+
+    elif opcion == "2":
+        print("--- Lista de contactos ---")
+        if len(nombres) == 0:
+            print("No hay contactos guardados.")
+        else:
+            for i in range(len(nombres)):
+                print(nombres[i], ":", telefonos[i])
+
+    elif opcion == "3":
+        buscar = input("Ingrese el nombre a buscar: ")
+        if buscar in nombres:
+            indice = nombres.index(buscar)
+            print("Contacto encontrado ->", nombres[indice], ":", telefonos[indice])
+        else:
+            print("No se encontró ese contacto.")
+
+    elif opcion == "4":
+        print("Saliendo del programa...")
+        break
+
+    else:
+        print("Opción inválida, intente de nuevo.")
