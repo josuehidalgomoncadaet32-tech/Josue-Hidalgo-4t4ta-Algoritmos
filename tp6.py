@@ -46,14 +46,14 @@ def ordenamiento_seleccion():
         lista[i], lista[minimo] = lista[minimo], lista[i]
 
 while True:
-    print("\n1. Crear lista")
+    print("1. Crear lista")
     print("2. Buscar")
     print("3. Ordenar")
     print("4. Salir")
     op = input("Opción: ")
 
     if op == "1":
-        lista = [int(input("Elemento: ")) for _ in range(int(input("Cantidad: ")))]
+        lista = [int(input("Elemento: ")) for x in range(int(input("Cantidad: ")))]
         print("Lista:", lista)
 
     elif op == "2":
@@ -74,3 +74,4 @@ while True:
 
     elif op == "4":
         break
+
