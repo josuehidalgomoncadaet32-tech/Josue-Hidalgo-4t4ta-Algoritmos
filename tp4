@@ -1,0 +1,87 @@
+import random
+#Holaprofe:D
+matriz = []
+tesoros = set()
+intentos = 5
+tesoros_encontrados = 0
+
+def crear_matriz():
+    global matriz
+    matriz = []
+    for i in range(10):
+        fila = []
+        for j in range(10):
+            fila.append('-')
+        matriz.append(fila)
+
+def generar_tesoros():
+    global tesoros
+    tesoros = set()
+    while len(tesoros) < 3:
+        fila = random.randint(0, 9)
+        col = random.randint(0, 9)
+        tesoros.add((fila, col))
+
+def mostrar_matriz():
+    for fila in matriz:
+        for valor in fila:
+            print(valor, end=" ")
+        print()
+    print()
+
+def pedir_coordenada():
+    try:
+        fila = int(input("Ingresa la fila (0-9): "))
+        col = int(input("Ingresa la columna (0-9): "))
+        return fila, col
+    except ValueError:
+        print(" Ingresa solo números válidos.")
+        return None, None
+
+def jugar():
+    global intentos, tesoros_encontrados
+
+    crear_matriz()
+    generar_tesoros()
+    intentos = 5
+    tesoros_encontrados = 0
+
+    print("¡Bienvenido al juego del tesoro!")
+    print("Tienes que encontrar 3 tesoros ocultos en una matriz de 10x10.")
+    print("Tienes 5 intentos. Cada vez que encuentres un tesoro, se reinician tus intentos a 5.\n")
+
+    while intentos > 0 and tesoros_encontrados < 3:
+        mostrar_matriz()
+        print("Tesoros encontrados:", tesoros_encontrados)
+        print("Intentos restantes:", intentos)
+
+        fila, col = pedir_coordenada()
+        if fila is None or col is None:
+            continue
+
+        if fila < 0 or fila > 9 or col < 0 or col > 9:
+            print(" Posición fuera del rango. Intenta de nuevo.")
+            continue
+
+        if matriz[fila][col] != '-':
+            print(" Ya elegiste esa casilla. Intenta con otra.")
+            continue
+
+        if (fila, col) in tesoros:
+            print(" ¡Encontraste un TESORO! ")
+            matriz[fila][col] = 'T'
+            tesoros_encontrados += 1
+            intentos = 5
+        else:
+            print("Nada aquí...")
+            matriz[fila][col] = 'X'
+            intentos -= 1
+
+    mostrar_matriz()
+    if tesoros_encontrados == 3:
+        print(" ¡Felicidades! Encontraste todos los tesoros.")
+    else:
+        print(" Se acabaron tus intentos. Fin del juego.")
+        print("Los tesoros estaban en:", tesoros)
+
+jugar()
