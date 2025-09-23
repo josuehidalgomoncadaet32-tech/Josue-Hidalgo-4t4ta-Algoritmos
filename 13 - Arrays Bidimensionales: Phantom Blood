@@ -1,0 +1,62 @@
+def ejercicio1():
+    matriz = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+    print("Matriz 3x3:")
+    for fila in matriz:
+        for num in fila:
+            print(num, end=" ")
+        print()
+
+def ejercicio2():
+    matriz = [
+         [10, 20, 30],
+        [40, 50, 60],
+        [70, 80, 90]]
+    
+    suma_total = 0
+    for fila in matriz:
+        for num in fila:
+            suma_total += num
+
+    print("Matriz 3x3 múltiplos de 10:")
+    for fila in matriz:
+        print(fila)
+    print("Esta es la suamn:", suma_total)
+
+def ejercicio3():
+    matriz = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+        [13, 14, 15, 16]
+    ]
+    print("Matriz 4x4:")
+    for fila in matriz:
+        print(fila)
+
+    fila = int(input("Ingresa el índice de fila (0 a 3): "))
+    columna = int(input("Ingresa el índice de columna (0 a 3): "))
+    print("El num en esa posición es:", matriz[fila][columna])
+
+def ejercicio4():
+    matriz = [
+        [15, 22, 3, 44],
+        [55, 6, 17, 8],
+        [9, 100, 11, 12],
+        [13, 14, 25, 16]
+    ]
+    mayor = matriz[0][0]
+
+    for fila in matriz:
+        for num in fila:
+            if num > mayor:
+                mayor = num
+
+    print("Matriz 4x4:")
+    for fila in matriz:
+        print(fila)
+    print("El número más mayor  es:", mayor)
+
