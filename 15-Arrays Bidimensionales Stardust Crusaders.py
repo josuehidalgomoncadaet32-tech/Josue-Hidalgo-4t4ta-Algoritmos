@@ -39,6 +39,17 @@ def ej3():
 
     matriz = []
 
-    for x in 
+   for x in range(n):
+    fila = []
+    for i in range(n):
+        if x == i:
+            fila.append(1)  
+        else:
+            fila.append(0)   
+    matriz_identidad.append(fila)
+
+print("Matriz identidad", n, "x", n)
+for fila in matriz_identidad:
+    print(fila)
 
 
