@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 226, 226); 
+    margin:auto;
+    padding:auto;
+    color: #000000ff;
+}
+
+nav {
+    background: #c41818ff;
+    background-size:auto;
+    padding: 1.4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;   
+}
+
+nav .links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .links a:hover {
+    color: #fdb10cff;
+}
+
+h2 {
+    text-align: center;
+    color: #af0202ff; /* Naranja Panchosky */
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+    color: #d35400; /* Naranja Panchosky */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de la Grilla */
+.grid-productos {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta de Producto */
+.card-producto {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.43);
+    transition: transform 0.3s ease;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.card-producto:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen Comida */
+.card-producto img {
+    width: auto;
+    border-radius: 15px;
+    margin-top:7px;
+    margin-bottom:-9px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contenido de la Tarjeta */
+.info-producto {
+    padding: 20px;
+}
+
+.info-producto h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.info-producto p {
+    font-size: 0.9rem;
+    color: #666;
+    height: 40px; /* Para que todos los textos midan igual */
+}
+
+.precio {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin: 15px 0;
+}
+
+/* Botón */
+.btn-comprar {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: #d35400;
+}
+
+nav{
+
+    background: #dc2626;
+
+    padding: 15px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.carrito-icono{
+
+    position: relative;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    color: white;
+}
+
+.contador-carrito{
+
+    position: absolute;
+
+    top: -10px;
+
+    right: -12px;
+
+    background: white;
+
+    color: red;
+
+    width: 22px;
+
+    height: 22px;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24,
+}

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Fondo azul oscuro degradado */
+    background: linear-gradient(135deg, #B80F0F, #FFA30F, #FFE70F);
+    background-size: 400% 400%;
+    animation: fondoAnim 12s ease infinite;
+}
+
+@keyframes fondoAnim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 35px;
+    width: 380px;
+    border-radius: 18px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+h1 {
+    color:red;
+    font-size: 32px;
+    margin-bottom: 25px;
+    
+}
+
+h2 {
+    color: white;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 90%;
+    padding: 13px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.7);
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    background: white;
+    box-shadow: 0 0 10px rgba(66,165,245,0.8);
+    outline: none;
+}
+
+button {
+    width: 90%;
+    padding: 13px;
+    background: #B80F0F;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.footer-login{
+    color:white;
+}
+
+a{
+    color:#ff0000ff;
+}
+
+button:hover {
+    background: #D95B07;
+    transform: translateY(-2px);
+}

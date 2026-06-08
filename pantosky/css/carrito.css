@@ -1,0 +1,106 @@
+body{
+    background:#5a0000;
+    color:white;
+    font-family:Arial;
+    padding:20px;
+}
+nav {
+    background: #c41818ff;
+    background-size:auto;
+    padding: 1.4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;   
+}
+
+.mensaje{
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    background:#374151;
+}
+
+nav .links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+}
+ nav .links a:hover {
+            color: #60a5fa;
+}
+
+
+nav .links a.logout {
+    color: #f87171;
+}
+
+nav .links a.logout:hover {
+    color: #ef4444;
+}
+
+.producto{
+    background:#cb1010;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+.cantidad-control{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:10px 0;
+}
+
+.cantidad-control button{
+
+    width:35px;
+
+    height:35px;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+.cantidad-control input{
+
+    width:70px;
+
+    text-align:center;
+
+    padding:5px;
+}
+
+.finalizar{
+
+    background:#22c55e;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 25px;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-top:20px;
+}

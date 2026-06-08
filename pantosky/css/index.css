@@ -1,0 +1,191 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgba(255, 0, 34, 0.2), rgba(255, 0, 157, 0.2)), url('../images/panchosky.png');
+            background-size:cover;
+            background-attachment: fixed;
+}
+
+nav {
+            background: #c41818ff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            right:0;
+            top:0;
+}
+
+h1 {
+            color: white;
+            margin: 0;
+            text-shadow: 0px 4px 12px black;
+            font-size: 48px;
+}
+
+nav .links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+}
+
+.contador-carrito{
+
+    position: absolute;
+
+    top: -10px;
+
+    right: -12px;
+
+    background: white;
+
+    color: red;
+
+    width: 22px;
+
+    height: 22px;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+} 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24,
+}
+
+.carrito-icono{
+
+    position: relative;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    color: white;
+}
+
+
+nav .links a:hover {
+            color: #60a5fa;
+}
+.hero h1 {
+            background: url('../images/Panchoskylogo.png') center/cover no-repeat;
+            background-size:39% auto;
+            padding: 120px 20px;
+            color: white;
+            
+}
+
+.PanchoskyLogo{
+    padding: 60px 10px;
+    text-align: center;
+    text-shadow: 10px 10px 15px black;
+}
+
+.hero h2 {
+            color:white;
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 10px 10px 15px black;
+}
+
+h3 {
+            color:white;
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 10px 10px 15px black;
+}
+
+.hero p {
+            font-size: 18px;
+            text-shadow: 10px 10px 15px black;
+}
+
+
+
+.services {
+            padding: 40px;
+            text-align: center;
+}
+
+.services h2 {
+            color:white;
+            margin-bottom: 20px;
+            font-size: 40px; 
+            text-shadow: 10px 5px 5px black
+}
+
+.card-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+}
+
+.card {
+            width: 260px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            
+}
+
+.card img {
+            width: 100%;
+            border-radius: 8px;
+}
+
+.card h3 {
+            margin: 10px 0;
+            color: #ff0202;
+            font-family: 'Inter', sans-serif;
+            font-size:27px;
+}
+
+.card p {
+            color: #555;
+}
+        
+.btn-servicio {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-servicio:hover {
+    background: orange;
+}
+
+nav .links a.logout {
+    color: #f87171;
+}
+
+nav .links a.logout:hover {
+    color: #ef4444;
+}

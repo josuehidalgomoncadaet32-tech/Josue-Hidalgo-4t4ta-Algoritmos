@@ -1,0 +1,20 @@
+body {
+    background: #f3f4f6; /* Fondo gris claro limpio para administración */
+    color: #333;
+}
+nav {
+    background: #c41818;
+    padding: 15px;
+}
+nav .links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container-admin {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
